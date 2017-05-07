@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		107D25291EBCC76500DED341 /* EMListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107D25281EBCC76500DED341 /* EMListViewController.m */; };
+		107D252F1EBD382600DED341 /* EMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107D252E1EBD382600DED341 /* EMPickerViewController.m */; };
+		107D25321EBD39FE00DED341 /* EMResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107D25311EBD39FE00DED341 /* EMResultViewController.m */; };
+		107D25361EBD5AC600DED341 /* libcvface_api.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 107D25351EBD5AC600DED341 /* libcvface_api.a */; };
+		107D25381EBD5B2800DED341 /* FACESDK_8EBDD0B5-FB25-496A-84A4-FB1EE3FA709C.lic in Resources */ = {isa = PBXBuildFile; fileRef = 107D25371EBD5B2800DED341 /* FACESDK_8EBDD0B5-FB25-496A-84A4-FB1EE3FA709C.lic */; };
+		107D253D1EBD8D7000DED341 /* EMEmotionProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 107D253C1EBD8D7000DED341 /* EMEmotionProcessor.m */; };
+		107D25411EBD99C200DED341 /* attribute.model in Resources */ = {isa = PBXBuildFile; fileRef = 107D253E1EBD98B300DED341 /* attribute.model */; };
+		107D25421EBD99C300DED341 /* verify.model in Resources */ = {isa = PBXBuildFile; fileRef = 107D25401EBD98ED00DED341 /* verify.model */; };
+		107D25451EBDBA4800DED341 /* EMCaptureResultViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 107D25441EBDBA4800DED341 /* EMCaptureResultViewController.mm */; };
+		107D25491EBDBCB400DED341 /* EMDetectResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 107D25481EBDBCB400DED341 /* EMDetectResult.m */; };
+		107D254C1EBDE7B100DED341 /* EMAttributeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 107D254B1EBDE7B100DED341 /* EMAttributeResult.m */; };
+		10910C151EBCB107009F2D77 /* EMCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10910C141EBCB107009F2D77 /* EMCaptureViewController.m */; };
+		10910C181EBCBF99009F2D77 /* EMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10910C171EBCBF99009F2D77 /* EMStartViewController.m */; };
+		109116921EBC30F6005E96F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 109116911EBC30F6005E96F9 /* main.m */; };
+		109116951EBC30F6005E96F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 109116941EBC30F6005E96F9 /* AppDelegate.m */; };
+		1091169B1EBC30F7005E96F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109116991EBC30F7005E96F9 /* Main.storyboard */; };
+		109116A01EBC30F7005E96F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1091169E1EBC30F7005E96F9 /* LaunchScreen.storyboard */; };
+		10BAE2301EBE0DCF007D3C67 /* happy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE22F1EBE0DCF007D3C67 /* happy.bundle */; };
+		10BAE2351EBE0F39007D3C67 /* angry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2311EBE0F39007D3C67 /* angry.bundle */; };
+		10BAE2361EBE0F39007D3C67 /* calm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2321EBE0F39007D3C67 /* calm.bundle */; };
+		10BAE2371EBE0F39007D3C67 /* panic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2331EBE0F39007D3C67 /* panic.bundle */; };
+		10BAE2381EBE0F39007D3C67 /* sad.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2341EBE0F39007D3C67 /* sad.bundle */; };
+		10BAE25F1EBEBC51007D3C67 /* angry2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE24F1EBEBC50007D3C67 /* angry2.jpg */; };
+		10BAE2601EBEBC51007D3C67 /* angry3.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2501EBEBC50007D3C67 /* angry3.png */; };
+		10BAE2611EBEBC51007D3C67 /* angry1.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2511EBEBC50007D3C67 /* angry1.png */; };
+		10BAE2621EBEBC51007D3C67 /* scary1.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2521EBEBC50007D3C67 /* scary1.png */; };
+		10BAE2631EBEBC51007D3C67 /* calm3.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2531EBEBC50007D3C67 /* calm3.png */; };
+		10BAE2641EBEBC51007D3C67 /* calm4.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2541EBEBC50007D3C67 /* calm4.png */; };
+		10BAE2651EBEBC51007D3C67 /* sad1.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2551EBEBC50007D3C67 /* sad1.png */; };
+		10BAE2661EBEBC51007D3C67 /* happy5.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2561EBEBC50007D3C67 /* happy5.png */; };
+		10BAE2671EBEBC51007D3C67 /* happy4.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2571EBEBC50007D3C67 /* happy4.png */; };
+		10BAE2681EBEBC51007D3C67 /* happy3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2581EBEBC50007D3C67 /* happy3.jpg */; };
+		10BAE2691EBEBC51007D3C67 /* calm1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE2591EBEBC50007D3C67 /* calm1.jpg */; };
+		10BAE26A1EBEBC51007D3C67 /* sad2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE25A1EBEBC50007D3C67 /* sad2.png */; };
+		10BAE26B1EBEBC51007D3C67 /* happy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE25B1EBEBC50007D3C67 /* happy2.jpg */; };
+		10BAE26C1EBEBC51007D3C67 /* happy1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE25C1EBEBC50007D3C67 /* happy1.jpg */; };
+		10BAE26D1EBEBC51007D3C67 /* calm2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE25D1EBEBC51007D3C67 /* calm2.png */; };
+		10BAE26E1EBEBC51007D3C67 /* scary2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE25E1EBEBC51007D3C67 /* scary2.jpg */; };
+		10BAE2701EBED007007D3C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BAE26F1EBED007007D3C67 /* Assets.xcassets */; };
+		13C6120E74C5DEF5C6F325F4 /* libPods-EmoPK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59383D9BB54F2E770CFB297A /* libPods-EmoPK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		107D25271EBCC76500DED341 /* EMListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMListViewController.h; sourceTree = "<group>"; };
+		107D25281EBCC76500DED341 /* EMListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMListViewController.m; sourceTree = "<group>"; };
+		107D252D1EBD382600DED341 /* EMPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPickerViewController.h; sourceTree = "<group>"; };
+		107D252E1EBD382600DED341 /* EMPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMPickerViewController.m; sourceTree = "<group>"; };
+		107D25301EBD39FE00DED341 /* EMResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMResultViewController.h; sourceTree = "<group>"; };
+		107D25311EBD39FE00DED341 /* EMResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMResultViewController.m; sourceTree = "<group>"; };
+		107D25351EBD5AC600DED341 /* libcvface_api.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcvface_api.a; path = "SensetimeCV/libs/ios_os-universal/libcvface_api.a"; sourceTree = "<group>"; };
+		107D25371EBD5B2800DED341 /* FACESDK_8EBDD0B5-FB25-496A-84A4-FB1EE3FA709C.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "FACESDK_8EBDD0B5-FB25-496A-84A4-FB1EE3FA709C.lic"; sourceTree = "<group>"; };
+		107D253B1EBD8D7000DED341 /* EMEmotionProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMEmotionProcessor.h; sourceTree = "<group>"; };
+		107D253C1EBD8D7000DED341 /* EMEmotionProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMEmotionProcessor.m; sourceTree = "<group>"; };
+		107D253E1EBD98B300DED341 /* attribute.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = attribute.model; sourceTree = "<group>"; };
+		107D25401EBD98ED00DED341 /* verify.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = verify.model; sourceTree = "<group>"; };
+		107D25431EBDBA4800DED341 /* EMCaptureResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCaptureResultViewController.h; sourceTree = "<group>"; };
+		107D25441EBDBA4800DED341 /* EMCaptureResultViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EMCaptureResultViewController.mm; sourceTree = "<group>"; };
+		107D25471EBDBCB400DED341 /* EMDetectResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMDetectResult.h; sourceTree = "<group>"; };
+		107D25481EBDBCB400DED341 /* EMDetectResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMDetectResult.m; sourceTree = "<group>"; };
+		107D254A1EBDE7B100DED341 /* EMAttributeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAttributeResult.h; sourceTree = "<group>"; };
+		107D254B1EBDE7B100DED341 /* EMAttributeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAttributeResult.m; sourceTree = "<group>"; };
+		10910C131EBCB107009F2D77 /* EMCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCaptureViewController.h; sourceTree = "<group>"; };
+		10910C141EBCB107009F2D77 /* EMCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCaptureViewController.m; sourceTree = "<group>"; };
+		10910C161EBCBF99009F2D77 /* EMStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStartViewController.h; sourceTree = "<group>"; };
+		10910C171EBCBF99009F2D77 /* EMStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMStartViewController.m; sourceTree = "<group>"; };
+		1091168D1EBC30F6005E96F9 /* EmoPK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoPK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		109116911EBC30F6005E96F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		109116931EBC30F6005E96F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		109116941EBC30F6005E96F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1091169A1EBC30F7005E96F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1091169F1EBC30F7005E96F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		109116A11EBC30F7005E96F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BAE22F1EBE0DCF007D3C67 /* happy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = happy.bundle; sourceTree = "<group>"; };
+		10BAE2311EBE0F39007D3C67 /* angry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = angry.bundle; sourceTree = "<group>"; };
+		10BAE2321EBE0F39007D3C67 /* calm.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = calm.bundle; sourceTree = "<group>"; };
+		10BAE2331EBE0F39007D3C67 /* panic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = panic.bundle; sourceTree = "<group>"; };
+		10BAE2341EBE0F39007D3C67 /* sad.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sad.bundle; sourceTree = "<group>"; };
+		10BAE24F1EBEBC50007D3C67 /* angry2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry2.jpg; sourceTree = "<group>"; };
+		10BAE2501EBEBC50007D3C67 /* angry3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry3.png; sourceTree = "<group>"; };
+		10BAE2511EBEBC50007D3C67 /* angry1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry1.png; sourceTree = "<group>"; };
+		10BAE2521EBEBC50007D3C67 /* scary1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scary1.png; sourceTree = "<group>"; };
+		10BAE2531EBEBC50007D3C67 /* calm3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calm3.png; sourceTree = "<group>"; };
+		10BAE2541EBEBC50007D3C67 /* calm4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calm4.png; sourceTree = "<group>"; };
+		10BAE2551EBEBC50007D3C67 /* sad1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad1.png; sourceTree = "<group>"; };
+		10BAE2561EBEBC50007D3C67 /* happy5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy5.png; sourceTree = "<group>"; };
+		10BAE2571EBEBC50007D3C67 /* happy4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy4.png; sourceTree = "<group>"; };
+		10BAE2581EBEBC50007D3C67 /* happy3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happy3.jpg; sourceTree = "<group>"; };
+		10BAE2591EBEBC50007D3C67 /* calm1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = calm1.jpg; sourceTree = "<group>"; };
+		10BAE25A1EBEBC50007D3C67 /* sad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad2.png; sourceTree = "<group>"; };
+		10BAE25B1EBEBC50007D3C67 /* happy2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happy2.jpg; sourceTree = "<group>"; };
+		10BAE25C1EBEBC50007D3C67 /* happy1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happy1.jpg; sourceTree = "<group>"; };
+		10BAE25D1EBEBC51007D3C67 /* calm2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calm2.png; sourceTree = "<group>"; };
+		10BAE25E1EBEBC51007D3C67 /* scary2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scary2.jpg; sourceTree = "<group>"; };
+		10BAE26F1EBED007007D3C67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59383D9BB54F2E770CFB297A /* libPods-EmoPK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmoPK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9067CCB58E9B6C75EAB2A4E9 /* Pods-EmoPK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmoPK.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmoPK/Pods-EmoPK.release.xcconfig"; sourceTree = "<group>"; };
+		91FCA4D7B4581B4AC8E2603A /* Pods-EmoPK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmoPK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmoPK/Pods-EmoPK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1091168A1EBC30F6005E96F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107D25361EBD5AC600DED341 /* libcvface_api.a in Frameworks */,
+				13C6120E74C5DEF5C6F325F4 /* libPods-EmoPK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B252B8FE95A6510A1AD6456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				107D25351EBD5AC600DED341 /* libcvface_api.a */,
+				59383D9BB54F2E770CFB297A /* libPods-EmoPK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		107D25391EBD5BB500DED341 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				10910C131EBCB107009F2D77 /* EMCaptureViewController.h */,
+				10910C141EBCB107009F2D77 /* EMCaptureViewController.m */,
+				10910C161EBCBF99009F2D77 /* EMStartViewController.h */,
+				10910C171EBCBF99009F2D77 /* EMStartViewController.m */,
+				107D25271EBCC76500DED341 /* EMListViewController.h */,
+				107D25281EBCC76500DED341 /* EMListViewController.m */,
+				107D252D1EBD382600DED341 /* EMPickerViewController.h */,
+				107D252E1EBD382600DED341 /* EMPickerViewController.m */,
+				107D25431EBDBA4800DED341 /* EMCaptureResultViewController.h */,
+				107D25441EBDBA4800DED341 /* EMCaptureResultViewController.mm */,
+				107D25301EBD39FE00DED341 /* EMResultViewController.h */,
+				107D25311EBD39FE00DED341 /* EMResultViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		107D253A1EBD5BC000DED341 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				107D253B1EBD8D7000DED341 /* EMEmotionProcessor.h */,
+				107D253C1EBD8D7000DED341 /* EMEmotionProcessor.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		107D253F1EBD98E200DED341 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				107D253E1EBD98B300DED341 /* attribute.model */,
+				107D25401EBD98ED00DED341 /* verify.model */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		107D25461EBDBC9500DED341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				107D25471EBDBCB400DED341 /* EMDetectResult.h */,
+				107D25481EBDBCB400DED341 /* EMDetectResult.m */,
+				107D254A1EBDE7B100DED341 /* EMAttributeResult.h */,
+				107D254B1EBDE7B100DED341 /* EMAttributeResult.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		109116841EBC30F6005E96F9 = {
+			isa = PBXGroup;
+			children = (
+				10BAE24F1EBEBC50007D3C67 /* angry2.jpg */,
+				10BAE2501EBEBC50007D3C67 /* angry3.png */,
+				10BAE2511EBEBC50007D3C67 /* angry1.png */,
+				10BAE2521EBEBC50007D3C67 /* scary1.png */,
+				10BAE2531EBEBC50007D3C67 /* calm3.png */,
+				10BAE2541EBEBC50007D3C67 /* calm4.png */,
+				10BAE2551EBEBC50007D3C67 /* sad1.png */,
+				10BAE2561EBEBC50007D3C67 /* happy5.png */,
+				10BAE2571EBEBC50007D3C67 /* happy4.png */,
+				10BAE2581EBEBC50007D3C67 /* happy3.jpg */,
+				10BAE2591EBEBC50007D3C67 /* calm1.jpg */,
+				10BAE25A1EBEBC50007D3C67 /* sad2.png */,
+				10BAE25B1EBEBC50007D3C67 /* happy2.jpg */,
+				10BAE25C1EBEBC50007D3C67 /* happy1.jpg */,
+				10BAE25D1EBEBC51007D3C67 /* calm2.png */,
+				10BAE25E1EBEBC51007D3C67 /* scary2.jpg */,
+				107D25371EBD5B2800DED341 /* FACESDK_8EBDD0B5-FB25-496A-84A4-FB1EE3FA709C.lic */,
+				10BAE2311EBE0F39007D3C67 /* angry.bundle */,
+				10BAE2321EBE0F39007D3C67 /* calm.bundle */,
+				10BAE2331EBE0F39007D3C67 /* panic.bundle */,
+				10BAE2341EBE0F39007D3C67 /* sad.bundle */,
+				10BAE22F1EBE0DCF007D3C67 /* happy.bundle */,
+				1091168F1EBC30F6005E96F9 /* EmoPK */,
+				1091168E1EBC30F6005E96F9 /* Products */,
+				8C422366B7BC2254DD2323A3 /* Pods */,
+				0B252B8FE95A6510A1AD6456 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1091168E1EBC30F6005E96F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1091168D1EBC30F6005E96F9 /* EmoPK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1091168F1EBC30F6005E96F9 /* EmoPK */ = {
+			isa = PBXGroup;
+			children = (
+				107D253F1EBD98E200DED341 /* models */,
+				107D25461EBDBC9500DED341 /* Model */,
+				107D253A1EBD5BC000DED341 /* Utility */,
+				107D25391EBD5BB500DED341 /* Controllers */,
+				109116931EBC30F6005E96F9 /* AppDelegate.h */,
+				109116941EBC30F6005E96F9 /* AppDelegate.m */,
+				109116991EBC30F7005E96F9 /* Main.storyboard */,
+				1091169E1EBC30F7005E96F9 /* LaunchScreen.storyboard */,
+				109116A11EBC30F7005E96F9 /* Info.plist */,
+				10BAE26F1EBED007007D3C67 /* Assets.xcassets */,
+				109116901EBC30F6005E96F9 /* Supporting Files */,
+			);
+			path = EmoPK;
+			sourceTree = "<group>";
+		};
+		109116901EBC30F6005E96F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				109116911EBC30F6005E96F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C422366B7BC2254DD2323A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91FCA4D7B4581B4AC8E2603A /* Pods-EmoPK.debug.xcconfig */,
+				9067CCB58E9B6C75EAB2A4E9 /* Pods-EmoPK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1091168C1EBC30F6005E96F9 /* EmoPK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 109116A41EBC30F7005E96F9 /* Build configuration list for PBXNativeTarget "EmoPK" */;
+			buildPhases = (
+				44E23F2E2A3E581A3D7E2B6A /* [CP] Check Pods Manifest.lock */,
+				109116891EBC30F6005E96F9 /* Sources */,
+				1091168A1EBC30F6005E96F9 /* Frameworks */,
+				1091168B1EBC30F6005E96F9 /* Resources */,
+				61425F3CB69006F38AC67ABE /* [CP] Embed Pods Frameworks */,
+				9F781BC6207C4FC1403D4C35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmoPK;
+			productName = EmoPK;
+			productReference = 1091168D1EBC30F6005E96F9 /* EmoPK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		109116851EBC30F6005E96F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = BlackDragon;
+				TargetAttributes = {
+					1091168C1EBC30F6005E96F9 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = T97FFXXX75;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 109116881EBC30F6005E96F9 /* Build configuration list for PBXProject "EmoPK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 109116841EBC30F6005E96F9;
+			productRefGroup = 1091168E1EBC30F6005E96F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1091168C1EBC30F6005E96F9 /* EmoPK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1091168B1EBC30F6005E96F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BAE2661EBEBC51007D3C67 /* happy5.png in Resources */,
+				107D25411EBD99C200DED341 /* attribute.model in Resources */,
+				10BAE2301EBE0DCF007D3C67 /* happy.bundle in Resources */,
+				10BAE2651EBEBC51007D3C67 /* sad1.png in Resources */,
+				10BAE2641EBEBC51007D3C67 /* calm4.png in Resources */,
+				10BAE2621EBEBC51007D3C67 /* scary1.png in Resources */,
+				10BAE26E1EBEBC51007D3C67 /* scary2.jpg in Resources */,
+				10BAE2381EBE0F39007D3C67 /* sad.bundle in Resources */,
+				10BAE26C1EBEBC51007D3C67 /* happy1.jpg in Resources */,
+				10BAE2671EBEBC51007D3C67 /* happy4.png in Resources */,
+				10BAE2611EBEBC51007D3C67 /* angry1.png in Resources */,
+				107D25421EBD99C300DED341 /* verify.model in Resources */,
+				109116A01EBC30F7005E96F9 /* LaunchScreen.storyboard in Resources */,
+				10BAE2601EBEBC51007D3C67 /* angry3.png in Resources */,
+				10BAE2351EBE0F39007D3C67 /* angry.bundle in Resources */,
+				10BAE2681EBEBC51007D3C67 /* happy3.jpg in Resources */,
+				1091169B1EBC30F7005E96F9 /* Main.storyboard in Resources */,
+				10BAE26A1EBEBC51007D3C67 /* sad2.png in Resources */,
+				10BAE2691EBEBC51007D3C67 /* calm1.jpg in Resources */,
+				10BAE25F1EBEBC51007D3C67 /* angry2.jpg in Resources */,
+				10BAE2631EBEBC51007D3C67 /* calm3.png in Resources */,
+				10BAE26D1EBEBC51007D3C67 /* calm2.png in Resources */,
+				107D25381EBD5B2800DED341 /* FACESDK_8EBDD0B5-FB25-496A-84A4-FB1EE3FA709C.lic in Resources */,
+				10BAE26B1EBEBC51007D3C67 /* happy2.jpg in Resources */,
+				10BAE2361EBE0F39007D3C67 /* calm.bundle in Resources */,
+				10BAE2701EBED007007D3C67 /* Assets.xcassets in Resources */,
+				10BAE2371EBE0F39007D3C67 /* panic.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44E23F2E2A3E581A3D7E2B6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61425F3CB69006F38AC67ABE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmoPK/Pods-EmoPK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F781BC6207C4FC1403D4C35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmoPK/Pods-EmoPK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		109116891EBC30F6005E96F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107D25451EBDBA4800DED341 /* EMCaptureResultViewController.mm in Sources */,
+				107D254C1EBDE7B100DED341 /* EMAttributeResult.m in Sources */,
+				10910C151EBCB107009F2D77 /* EMCaptureViewController.m in Sources */,
+				107D25291EBCC76500DED341 /* EMListViewController.m in Sources */,
+				10910C181EBCBF99009F2D77 /* EMStartViewController.m in Sources */,
+				109116951EBC30F6005E96F9 /* AppDelegate.m in Sources */,
+				107D253D1EBD8D7000DED341 /* EMEmotionProcessor.m in Sources */,
+				107D252F1EBD382600DED341 /* EMPickerViewController.m in Sources */,
+				107D25491EBDBCB400DED341 /* EMDetectResult.m in Sources */,
+				109116921EBC30F6005E96F9 /* main.m in Sources */,
+				107D25321EBD39FE00DED341 /* EMResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		109116991EBC30F7005E96F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1091169A1EBC30F7005E96F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1091169E1EBC30F7005E96F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1091169F1EBC30F7005E96F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		109116A21EBC30F7005E96F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		109116A31EBC30F7005E96F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		109116A51EBC30F7005E96F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91FCA4D7B4581B4AC8E2603A /* Pods-EmoPK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T97FFXXX75;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/OpenCV\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+					"$(PROJECT_DIR)/SensetimeCV/include",
+				);
+				INFOPLIST_FILE = EmoPK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SensetimeCV/libs/ios_os-universal",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BlackDragon.EmoPK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		109116A61EBC30F7005E96F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9067CCB58E9B6C75EAB2A4E9 /* Pods-EmoPK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T97FFXXX75;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/OpenCV\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+					"$(PROJECT_DIR)/SensetimeCV/include",
+				);
+				INFOPLIST_FILE = EmoPK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SensetimeCV/libs/ios_os-universal",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BlackDragon.EmoPK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		109116881EBC30F6005E96F9 /* Build configuration list for PBXProject "EmoPK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109116A21EBC30F7005E96F9 /* Debug */,
+				109116A31EBC30F7005E96F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		109116A41EBC30F7005E96F9 /* Build configuration list for PBXNativeTarget "EmoPK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109116A51EBC30F7005E96F9 /* Debug */,
+				109116A61EBC30F7005E96F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 109116851EBC30F6005E96F9 /* Project object */;
+}
